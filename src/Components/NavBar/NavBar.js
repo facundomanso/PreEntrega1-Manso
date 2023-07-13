@@ -8,19 +8,19 @@ const NavBar = () => {
     <h3>Ecommerce</h3>
     <ul>
         <li>
-            <a href='#'>Home</a>
+            <a href='/#'>Home</a>
         </li>
         <li>
-            <a href='#'>Gallery</a>
+            <a href='/#'>Gallery</a>
         </li>
         <li>
-            <a href='#'>Products</a>
+            <a href='/#'>Products</a>
         </li>
         <li>
-            <a href='#'>About Us</a>
+            <a href='/#'>About Us</a>
         </li>
         <li>
-            <a href='#'>Contact</a>
+            <a href='/#'>Contact</a>
         </li>
     </ul>    
     <CartWidget/>    
