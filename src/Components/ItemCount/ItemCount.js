@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-const QuantityButton = () => {
+const ItemCount = () => {
 
 const [quantity , setQuantity] = useState(0);
-const [stock, settock] = useState(5);
+const [stock, setStock] = useState(5);
 
 const HandleCounterLess = () =>{
   if (quantity <= 0){
@@ -13,7 +13,7 @@ const HandleCounterLess = () =>{
 };
 
 const HandleCounterAdd = () => {
-  if (quantity >= stock){
+  if (quantity >= stock || stock == 0){
     alert('no stock')
   } else {
     setQuantity(quantity + 1);
@@ -23,7 +23,7 @@ const HandleCounterAdd = () => {
 
 
   return (
-    <div className='quantityButtonContainer'>
+    <div className='itemCountContainer'>
         <button className='lessQuantity'
         onClick={HandleCounterLess}>-</button>
         <p>{quantity}</p>
@@ -34,4 +34,4 @@ const HandleCounterAdd = () => {
   )
 }
 
-export default QuantityButton
+export default ItemCount
