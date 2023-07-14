@@ -31,7 +31,7 @@ code {
   display: flex;
   justify-content: space-around;
   background-color: #9cba40;
-  height: 40px;
+  height: 6vh;
   width: 100vw;
   margin: 0px;
 }
@@ -75,15 +75,49 @@ code {
 
 /* itemListContainer  ------------------------------*/
 
-.itemListContainer h1 {
+.itemListContainer  {
   margin: 0px;
   padding: 0px; 
-  height: 50vh;
+  height: 94vh;
   width: 100%;
   background-color: #dcf1d5;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.itemListContainer h1 {
+  margin: 0px;
+  padding: 0px; 
+  height: 5vh;
+  width: 100%;
+ background-color: #dcf1d5; 
+ align-self: flex-start;
+ position:absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+
+/* ItemList  ---------------------------------------*/
+.itemList {
+  background-color: #dcf1d5; 
+  width: 100vw;
+  height: 94vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+/* Items  -----------------------------------------*/
+.item {
+  background-color: #9cba40;
+  border-radius: 5%;
+  height: 200px;
+  width: 150px;
 }
 
 

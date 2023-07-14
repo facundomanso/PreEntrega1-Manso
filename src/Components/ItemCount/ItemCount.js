@@ -28,8 +28,10 @@ const HandleIncrement = () => {
         <button className='incrementButton'
         onClick={HandleIncrement}>+</button>
         </div>
-      <div className='addButton'
-      onClick={onAdd(quantity)}>Add to Cart</div>
+      <div className='addButtonContainer'
+      >
+        <button onClick={() =>onAdd(quantity)}>Add to Cart</button>
+        </div>
     </div>
   )
 }
