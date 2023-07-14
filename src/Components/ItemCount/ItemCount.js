@@ -1,35 +1,35 @@
 import React, { useState } from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({initial, stock, onAdd}) => {
 
-const [quantity , setQuantity] = useState(0);
-const [stock, setStock] = useState(5);
+const [quantity , setQuantity] = useState(initial);
 
-const HandleCounterLess = () =>{
-  if (quantity <= 0){
-  alert('minimo');
-  }else{
-    setQuantity(quantity - 1)}
+const HandleDecrement = () =>{
+  if (quantity > 1){
+    setQuantity(quantity - 1);
+  }
 };
 
-const HandleCounterAdd = () => {
-  if (quantity >= stock || stock == 0){
-    alert('no stock')
-  } else {
-    setQuantity(quantity + 1);
-  }
+const HandleIncrement = () => {
+  if (quantity < stock){
+    setQuantity(quantity + 1)
+  } 
+  
 };
 
 
 
   return (
     <div className='itemCountContainer'>
-        <button className='lessQuantity'
-        onClick={HandleCounterLess}>-</button>
+      <div className='itemCountControls'>
+        <button className='decrementButton'
+        onClick={HandleDecrement}>-</button>
         <p>{quantity}</p>
-        <button className='addQuantity'
-        onClick={HandleCounterAdd}>+</button>
-
+        <button className='incrementButton'
+        onClick={HandleIncrement}>+</button>
+        </div>
+      <div className='addButton'
+      onClick={onAdd(quantity)}>Add to Cart</div>
     </div>
   )
 }
