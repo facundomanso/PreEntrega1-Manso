@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Item = ({name,price}) => {
+const Item = ({id, name,price}) => {
   return (
     <div className='item'> 
         <h4>Nombre: {name}</h4>
-        <h4>Precio: ${price}</h4>
+        <h4>Price: ${price}</h4>
+        <Link key={id} to={`/detail${id}`}>View Details</Link>
     </div>
   )
 }

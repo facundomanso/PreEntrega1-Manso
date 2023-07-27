@@ -1,4 +1,3 @@
-const GetProducts = () => {
 
     const products = [
         {
@@ -26,6 +25,9 @@ const GetProducts = () => {
             price: 1400
         }
     ]
+
+export const GetProducts = () => {
+
   return (
     new Promise((resolve) => {
         setTimeout(()=>{
@@ -36,4 +38,13 @@ const GetProducts = () => {
   )
 }
 
-export default GetProducts
+export const GetItemById = (itemId) => {
+     
+    return (
+        new Promise((resolve) => {
+            setTimeout(()=>{
+                resolve(products.fin(prod => prod.id === itemId))
+            }, 2000)
+        })
+    )
+}
