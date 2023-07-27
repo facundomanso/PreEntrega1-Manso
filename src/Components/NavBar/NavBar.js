@@ -9,13 +9,9 @@ const NavBar = () => {
     <h3>Ecommerce</h3>
     <ul>
         <li>
-            <a href='/#'>Home</a>
+            <Link to={'/home'}>Home</Link>
         </li>
-        <li>
-            <a href='/#'>Gallery</a>
-        </li>
-        
-            <Link to={'/detail'}>Products</Link>
+            <Link to={'/detail'}>Store</Link>
         <li>
             <a href='/#'>About Us</a>
         </li>
