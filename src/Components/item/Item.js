@@ -6,7 +6,7 @@ const Item = ({id, name,price}) => {
     <div className='item'> 
         <h4>Nombre: {name}</h4>
         <h4>Price: ${price}</h4>
-        <Link key={id} to={`/detail/${id}`}>View Details</Link>
+        <Link key={id} to={`/store/${id}`}>View Details</Link>
     </div>
   )
 }

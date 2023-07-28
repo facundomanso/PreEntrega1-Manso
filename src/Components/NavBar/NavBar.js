@@ -11,12 +11,16 @@ const NavBar = () => {
         <li>
             <Link to={'/home'}>Home</Link>
         </li>
-            <Link to={'/detail'}>Store</Link>
         <li>
-            <a href='/#'>About Us</a>
+            <Link to={'/store'}>Store</Link>
+            </li>
+        <li>
+            
+            <Link to={'/about'}>About Us</Link>
         </li>
         <li>
-            <a href='/#'>Contact</a>
+            <Link to={'/contact'}>Contact</Link>
+            
         </li>
     </ul>    
     <CartWidget/>    
