@@ -78,7 +78,7 @@ code {
 .itemListContainer  {
   margin: 0px;
   padding: 0px; 
-  height: 94vh;
+  height: 100%;
   width: 100%;
   background-color: #dcf1d5;
   display: flex;
@@ -86,40 +86,48 @@ code {
   align-items: center;
 }
 
-.itemListContainer h1 {
-  margin: 0px;
-  padding: 0px; 
-  height: 5vh;
-  width: 100%;
- background-color: #dcf1d5; 
- align-self: flex-start;
- position:absolute;
- display: flex;
- justify-content: center;
- align-items: center;
- 
-}
+
 
 
 /* ItemList  ---------------------------------------*/
 .itemList {
   background-color: #dcf1d5; 
   width: 100vw;
-  height: 94vh;
-  display: flex;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 300px 300px 300px 300px;
   justify-content: space-around;
-  align-items: center;
+  
   
 }
 
 /* Items  -----------------------------------------*/
 .item {
-  background-color: #9cba40;
+  background-color: white;
+  margin: 30px;
   border-radius: 5%;
-  height: 200px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
 }
 
+.itemImg{
+  height: 80px;
+  width: 80px;
+}
+
+
+
+.itemLink {
+  text-decoration: none;
+  padding: 8px;
+  background-color: whitesmoke;
+}
 
 /* QuantityButton  ------------------------------*/
 
@@ -131,4 +139,31 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+/* itemDetailContainer  ------------------------------*/
+
+.itemDetailContainer {
+  height: 94vh;
+  width: 100%;
+  background-color: #dcf1d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+
+  
+}
+
+/* itemDetail  ------------------------------*/
+
+.itemDetail {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 80vw;
+  border-radius: 10px;
+
 }

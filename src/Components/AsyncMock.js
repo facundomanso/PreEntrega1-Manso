@@ -53,6 +53,7 @@
             id: 8,
             name: 'Kiwis',
             category: 'fruit',
+            img: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
             description: ' Small, green, and tangy fruits with a fuzzy brown exterior. Packed with vitamin C, vitamin K, and dietary fiber. Support immune function and aid digestion. ',
             price: '15/kg'
         },
@@ -113,6 +114,17 @@ export const GetItemById = (itemId) => {
         new Promise((resolve) => {
             setTimeout(()=>{
                 resolve(products.find(prod => prod.id === parseInt(itemId)))
+            }, 2000)
+        })
+    )
+}
+
+export const GetItemByCategory = (itemCategory) => {
+     
+    return (
+        new Promise((resolve) => {
+            setTimeout(()=>{
+                resolve(products.filter(prod => prod.category === itemCategory))
             }, 2000)
         })
     )

@@ -7,14 +7,14 @@ const Categories = () => {
     categories
         <ul>
         <li>
-            <Link to={'/store/vegetables'}>Vegetables</Link>
+            <Link to={'/store/vege'}>Vegetables</Link>
         </li>
         <li>
-            <Link to={'/store/fruits'}>Fruits</Link>
+            <Link to={'/store/fruit'}>Fruits</Link>
             </li>
         <li>
             
-            <Link to={'/store/nuts '}>Nuts</Link>
+            <Link to={'/store/nut'}>Nuts</Link>
         </li>
         
     </ul>

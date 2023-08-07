@@ -11,6 +11,7 @@ const ItemList = ({products}) => {
             name={product.name}
             price={product.price}
             id ={product.id}
+            img={product.img}
         />)}
     </div>
   )
