@@ -4,7 +4,7 @@ import { GetProducts } from '../AsyncMock';
 import { useParams } from 'react-router-dom';
 
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
 
   const [products, setProducts] = useState([])
 
@@ -21,7 +21,7 @@ const ItemListContainer = (props) => {
         .catch((error)=> {
           console.log(error)
         })
-  },[]);
+  },[itemId]);
   
   return (
     <div className='itemListContainer'>
