@@ -8,20 +8,20 @@ const ItemListContainer = () => {
 
   const [products, setProducts] = useState([])
 
-  const { itemId } = useParams();
+  const { itemCategory } = useParams();
 
   useEffect(()=>{
     GetProducts()
         .then((resultado)=>{
-            if(!itemId) 
+            if(!itemCategory) 
               setProducts(resultado);
               else
-              setProducts(resultado.filter(item=>item.category === itemId))
+              setProducts(resultado.filter(item=>item.category === itemCategory))
         })
         .catch((error)=> {
           console.log(error)
         })
-  },[itemId]);
+  },[itemCategory]);
   
   return (
     <div className='itemListContainer'>
